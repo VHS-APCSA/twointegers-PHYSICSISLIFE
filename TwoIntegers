@@ -44,39 +44,55 @@
     }
     public String numberSize()
     {
-    String numSize = "";
-    if(int1 > int2)
-    {
-        numSize += int1 + "is the larger number";
-        numSize += "\n" + int2 + "is the smaller number";
+        String numSize = "";
+        if(int1 > int2)
+        {
+            numSize += int1 + "is the larger number";
+            numSize += "\n" + int2 + "is the smaller number";
+        }
+        else if(int1 < int2)
+        {
+            numSize += int2 + "is the larger number";
+            numSize += "\n" + int1 + "is the smaller number";
+        }
+        else
+        {
+            numSize += "Numbers are equal";
+        }
+        return numSize;
     }
-    else if(int1 < int2)
+    public String evenOdd()
     {
-        numSize += int2 + "is the larger number";
-        numSize += "\n" + int1 + "is the smaller number";
+        String evenOdd =  "";
+        if(int1 % 2 == 0)
+        {
+            evenOdd += "First integer is even";
+        }
+        else
+        {
+            evenOdd += "First integer is odd";
+        }
+        if(int2 % 2 == 0)
+        {
+            evenOdd += "Second integer is even";
+        }
+        if(int2 % 2 == 0)
+        {
+            evenOdd += "Second integer is odd";
+        }
+        return evenOdd;
     }
-    else
+    public String Multiple()
     {
-        numSize += "Numbers are equal";
+        String multiple = 0;
+        if(int1 % int2 == 0)
+        {
+            multiple += "First integer is multiple of second";
+        }
+        else
+        {
+            multiple += "First integer not multiple of second";
+        }
+        return multiple;
     }
-    return numSize;
 }
-public String evenOdd()
-{
-    String evenOdd =  "";
-    if(int1 % 2 == 0)
-    {
-        evenOdd += "First integer is even";
-    }
-    else
-    {
-        evenOdd += "First integer is odd";
-    }
-    if(int2 % 2 == 0)
-    {
-        evenOdd += "Second integer is even";
-    }
-    if(int2 % 2 == 0)
-    {
-        evenOdd += "Second integer is odd";
-    }
