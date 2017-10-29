@@ -1,4 +1,4 @@
-)public clas TwoIntegers
+public class TwoIntegers
 {
     private int int1;
     private int int2;
