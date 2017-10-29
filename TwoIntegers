@@ -1,0 +1,33 @@
+public clas TwoIntegers
+{
+    private double int1;
+    private double int2;
+    public TwoIntegers()
+    {
+        int1 = 0;
+        int2 = 0;
+    }
+    public TwoIntegers(double int1, double int2)
+    {
+        this.int1 = int1;
+        this.int2 = int2;
+    }
+    public String toArithmetic()
+    {
+        String arithmetic = "";
+        double sum = 0;
+        sum = ((int1) + (int2));
+        double product = 0;
+        product = ((int1) * (int2));
+        double difference = 0;
+        difference = ((int1) - (int2));
+        double quotient = 0;
+        quotient = ((int1) / (int2));
+        arithmetic = ("Your sum equals \n" + sum + "\nYour product equals \n" + product + "\nYour difference equals \n" + difference + "\nYour quotient equals \n" + quotient);
+        return arithmetic;
+    }
+    public void setInt1(int int1)
+    {
+        this.int1 = int1;
+    }
+    public void setInt2(int int2
