@@ -1,13 +1,13 @@
 public clas TwoIntegers
 {
-    private double int1;
-    private double int2;
+    private int int1;
+    private int int2;
     public TwoIntegers()
     {
         int1 = 0;
         int2 = 0;
     }
-    public TwoIntegers(double int1, double int2)
+    public TwoIntegers(int int1, int int2)
     {
         this.int1 = int1;
         this.int2 = int2;
