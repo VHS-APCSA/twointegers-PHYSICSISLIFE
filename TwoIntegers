@@ -84,7 +84,7 @@ public class TwoIntegers
     }
     public String Multiple()
     {
-        String multiple = 0;
+        String multiple = "";
         if(int1 % int2 == 0)
         {
             multiple += "First integer is multiple of second";
