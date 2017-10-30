@@ -9,10 +9,10 @@ public class TwoIntegersRunner
         System.out.println("Enter second integer");
         int int2 = input.nextInt();
         TwoIntegers twoint = new TwoIntegers(int1, int2);
-        String numberSize = twoint.getNumberSize();
-        String arithmetic = twoint.getArithmetic();
-        String evenOdd = twoint.getEvenOdd();
-        String multiple = twoint.getMultiple();
-        System.out.println(numberSize, arithmetic, evenOdd, multiple);
+        String numberSize = twoint.numberSize();
+        String arithmetic = twoint.toArithmetic();
+        String evenOdd = twoint.evenOdd();
+        String multiple = twoint.Multiple();
+        System.out.println(numberSize + arithmetic + evenOdd + multiple);
     }
 }
